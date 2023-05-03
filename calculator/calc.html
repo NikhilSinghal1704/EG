@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="screen">
+                <input type="text" id="result" name="result" readonly>
+            </div>
+            <div class="buttons">
+                <input type="button" value="7" onclick="updateResult('7')">
+                <input type="button" value="8" onclick="updateResult('8')">
+                <input type="button" value="9" onclick="updateResult('9')">
+                <input type="button" value="/" class="operator"
+                    onclick="updateResult('/')">
+                <input type="button" value="4" onclick="updateResult('4')">
+                <input type="button" value="5" onclick="updateResult('5')">
+                <input type="button" value="6" onclick="updateResult('6')">
+                <input type="button" value="*" class="operator"
+                    onclick="updateResult('*')">
+                <input type="button" value="1" onclick="updateResult('1')">
+                <input type="button" value="2" onclick="updateResult('2')">
+                <input type="button" value="3" onclick="updateResult('3')">
+                <input type="button" value="-" class="operator"
+                    onclick="updateResult('-')">
+                <input type="button" value="0" onclick="updateResult('0')">
+                <input type="button" value="." class="operator"
+                    onclick="updateResult('.')">
+                <input type="button" value="=" id="calculate"
+                    onclick="calculateResult()">
+                <input type="button" value="+" class="operator"
+                    onclick="updateResult('+')">
+                <input type="button" value="C" id="clear"
+                    onclick="clearResult()">
+            </div>
+        </div>
+
+        <script>
+    function updateResult(value) {
+      document.getElementById('result').value += value;
+    }
+
+    function calculateResult() {
+      var result = eval(document.getElementById('result').value);
+      document.getElementById('result').value = result;
+    }
+
+    function clearResult() {
+      document.getElementById('result').value = '';
+    }
+  </script>
+    </body>
+</html>
