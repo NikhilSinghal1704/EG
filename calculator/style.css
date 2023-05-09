@@ -1,88 +1,77 @@
-body {
+body{
+    background-color: rgb(26, 239, 239);
+}
+.Heading{
     display: flex;
     justify-content: center;
+    color: white;
+    font-size: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
-  }
-  
-  .calculator {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    padding: 20px;
-  }
-  
-  .screen {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    text-align: right;
-    border: none;
-    background-color: transparent;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-  }
-  
-  input[type="button"] {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    border: none;
-    border-radius: 50px;
-    background-color: #e8e8e8;
-    color: #333333;
-  }
-  
-  input[type="button"]:hover {
-    background-color: #dcdcdc;
+    justify-content: center;
+    margin: auto ;
+    border: solid 2px black;
+    height: 700px;
+    width: 700px;
+    margin-top: 80px;
+    background-color: rgb(56, 8, 230);
+}
+.container .display-container{
+    border: solid 2px black;
+    height: 100px;
+    width: 650px;
+    margin-bottom: 20px;
+    cursor: text;
+    background-color: rgb(233, 216, 20);
+    
+}
+.container .main-container{
+    border: solid 2px black;
+    height: 510px;
+    width: 650px;
+    background-color: rgb(254, 238, 9);
+
+}
+.container .main-container .row {
+    display: flex;
+    font-size: 60px;
+    
+}
+.container .main-container .row .button{
+    border: solid 2px black;
+    width: 132px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 17px;
+    background-color: rgb(236, 59, 59);
+}
+.container .main-container .row .button:hover{
     cursor: pointer;
-  }
-  
-  input[type="button"]:active {
-    background-color: #c8c8c8;
-  }
-  
-  .operator {
-    background-color: #ff9800;
-    color: #ffffff;
-  }
-  
-  .operator:hover {
-    background-color: #ffac33;
-  }
-  
-  .operator:active {
-    background-color: #e69500;
-  }
-  
-  #calculate {
-    grid-column: span 2;
-  }
-  
-  #clear {
-    background-color: #e53935;
-    color: #ffffff;
-  }
-  
-  #clear:hover {
-    background-color: #ff5f52;
-  }
-  
-  #clear:active {
-    background-color: #c62828;
-  }
-  
+    background-color: rgb(226, 149, 149);
+}
+.container .main-container .row .button-eq{
+    border: solid 2px black;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 17px;
+    background-color: rgb(19, 203, 228);
+}
+.container .main-container .row .button-eq:hover {
+    cursor: pointer;
+    background-color: rgb(134, 225, 237);
+}
+
+.container .display-container:hover{
+    background-color: rgb(196, 194, 194);
+
+}
+.container .display-container:hover{
+    background-color: rgb(235, 229, 156);
+    
+    }

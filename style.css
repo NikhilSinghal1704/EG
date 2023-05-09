@@ -1,0 +1,93 @@
+/* Apply a reset to remove any default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the page */
+body {
+  background-color: #f8f8f8;
+}
+
+/* Center the container on the page */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the header and its child elements */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.Nikhil {
+  overflow: auto; /* clear the float */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+}
+
+.Nikhil h2 {
+  text-align: center;
+}
+
+.Nikhil img {
+  float: right;
+  margin: 0 0 1em 1em; /* add some space around the image */
+  width: 40%;
+  height: 100%;
+}
+
+
+/* Style the project images and their links */
+.project-image {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the footer and its child elements */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer a {
+  font-size: 18px;
+}
